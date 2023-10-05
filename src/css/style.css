@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-image: url(/src/img/bg-repeat.jpg);
+    background-repeat: repeat-x;
+    background-size: contain;
+}
+
+.text{
+    margin: 0 75px 0 75px;
+    color: #fff;
+    width: 700px;
+}
+
+.text h1{
+    font-weight: 900;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.text p{
+    font-weight: 400;
+    font-size: 27px;
+}
+
+.form{
+    background-color: #fff;
+    width: 650px;
+    height: 600px;
+    padding: 25px;
+}
+
+.form .inputs input, textarea{
+    font-weight: 700;
+    font-size: 20px;
+    width: 600px;
+    height: 50px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.form .inputs textarea{
+    resize: none;
+    width: 600px;
+    height: 150px;
+}
+
+.form .inputs p{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 25px;
+}
+
+.form .inputs input[type='submit']{
+    margin-top: 50px;
+    background-color: #3CCC87;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.form .inputs ::placeholder {
+    color: #A8A8A8;
+}
+
+.form .inputs .required{
+    visibility: hidden;
+    color: #F52E2E;
+}
+
+/* Error and changed */
+.form .inputs .changed{
+    border: solid 1px #00C22B;
+}
+
+.form .inputs .error{
+    border: solid 1px #F52E2E;
+}
+
+.form .inputs .required.visibility{
+    visibility: visible;
+}
